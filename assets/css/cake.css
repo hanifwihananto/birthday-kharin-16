@@ -1,0 +1,329 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #ee9ca7;
+}
+
+#cake {
+  display: block;
+  position: relative;
+  margin: -10em auto 0 auto;
+}
+
+/* ============================================== Candle
+*/
+.velas {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 228px;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-300px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: in 500ms 6s ease-out forwards;
+          animation: in 500ms 6s ease-out forwards;
+}
+
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+*/
+.fuego {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+
+.fuego:nth-child(1) {
+  -webkit-animation: fuego 2s 6.5s infinite;
+          animation: fuego 2s 6.5s infinite;
+}
+
+.fuego:nth-child(2) {
+  -webkit-animation: fuego 1.5s 6.5s infinite;
+          animation: fuego 1.5s 6.5s infinite;
+}
+
+.fuego:nth-child(3) {
+  -webkit-animation: fuego 1s 6.5s infinite;
+          animation: fuego 1s 6.5s infinite;
+}
+
+.fuego:nth-child(4) {
+  -webkit-animation: fuego 0.5s 6.5s infinite;
+          animation: fuego 0.5s 6.5s infinite;
+}
+
+.fuego:nth-child(5) {
+  -webkit-animation: fuego 0.2s 6.5s infinite;
+          animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+@-webkit-keyframes fuego {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+@keyframes fuego {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+@-webkit-keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+.text {
+  color: #8b6a60;
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+}
+.text h1 {
+  padding-bottom: 6px;
+  font-size: 2em;
+}
+
+.button-style1 ,.button-style2{
+  position:absolute;
+  top:70%;
+  opacity:1;
+  z-index:100;
+}
+.button-style1 {
+  position:absolute;
+  left:20%;
+  animation:btn1 15s;
+}
+.button-style2 {
+  position:absolute;
+  left:68%;
+  animation:btn2 15s;
+}
+
+@keyframes btn1 {
+  0% {
+    opacity:0;
+    left:43.5%;
+  }
+  70% {
+    opacity:0;
+    left:43.5%;
+  }
+  100% {
+    opacity:1;
+    left:20%;
+  }
+}
+@-webkit-keyframes btn1 {
+  0% {
+    opacity:0;
+    left:43.5%;
+  }
+  70% {
+    opacity:0;
+    left:43.5%;
+  }
+  100% {
+    opacity:1;
+    left:20%;
+  }
+}
+@keyframes btn2 {
+  0% {
+    opacity:0;
+    left:43.5%;
+  }
+  70% {
+    opacity:0;
+    left:43.5%;
+  }
+  100% {
+    opacity:1;
+    left:68%;
+  }
+}
+@-webkit-keyframes btn2 {
+  0% {
+    opacity:0;
+    left:43.5%;
+  }
+  70% {
+    opacity:0;
+    left:43.5%;
+  }
+  100% {
+    opacity:1;
+    left:68%;
+  }
+}
+.lk1,.lk2 {
+  text-decoration:none;
+  font-family: Microsoft YaHei;
+  color:#fff;
+  transition:all 0.5s;
+}
+.link1,.link2 {
+  width:170px;
+  height:60px;
+  border:2px solid #fff;
+  -webkit-border:1px solid #fff;
+  border-radius:30px;
+  font-size: 23px;
+  text-align:center;
+  background: #ee9ca7;
+  transition:all 0.8s;
+}
+.link2 {
+  /*cursor:not-allowed;*/
+}
+.bt1,.bt2 {
+  position:relative;
+  top:22%;
+  vertical-align:middle;
+}
+
+a.lk1:hover {
+  color:#ee9ca7;
+  transition:all 0.5s;
+}
+.link1:hover {
+  background-color:#fff;
+  background-color:rgba(255,255,255,0,2);
+  border:2px solid #BBB;
+  transition:all 0.8s;
+}
+a.lk2:hover {
+  color:#ee9ca7;
+  transition:all 0.5s;
+}
+.link2:hover {
+  background-color:#fff;
+  background-color:rgba(255,255,255,0,2);
+  border:2px solid #BBB;
+  transition:all 0.8s;
+}
+
+/*========== MEDIA QUERIES ==========*/
+@media (min-width: 200px) and (max-width: 700px) {
+  .button-style1 {
+  position:absolute;
+  left:10%;
+  animation:btn1 15s;
+}
+.button-style2 {
+  position:absolute;
+  left:58%;
+  animation:btn2 15s;
+}
+
+@keyframes btn1 {
+  0% {
+    opacity:0;
+    left:43.5%;
+  }
+  70% {
+    opacity:0;
+    left:43.5%;
+  }
+  100% {
+    opacity:1;
+    left:10%;
+  }
+}
+@-webkit-keyframes btn1 {
+  0% {
+    opacity:0;
+    left:43.5%;
+  }
+  70% {
+    opacity:0;
+    left:43.5%;
+  }
+  100% {
+    opacity:1;
+    left:10%;
+  }
+}
+@keyframes btn2 {
+  0% {
+    opacity:0;
+    left:43.5%;
+  }
+  70% {
+    opacity:0;
+    left:43.5%;
+  }
+  100% {
+    opacity:1;
+    left:58%;
+  }
+}
+@-webkit-keyframes btn2 {
+  0% {
+    opacity:0;
+    left:43.5%;
+  }
+  70% {
+    opacity:0;
+    left:43.5%;
+  }
+  100% {
+    opacity:1;
+    left:58%;
+  }
+}
+
+}

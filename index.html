@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KHARIN | Login</title>
+
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="assets/img/birthday-cake.png">
+
+	<!-- Link CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Link Font Poppins -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+
+	<!-- Link FontAwesome -->
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>  
+</head>
+
+<body>
+
+	<!-- Blue Left -->
+	<img src="assets/img/wave.svg" alt="" class="wave">
+
+	<div class="container">
+
+		<div class="img">
+			<div class="text">
+				<p>Hallo -----</p>
+				<br>
+				<p class="ucapan">Selamat Datang !!!</p>
+				<p class="ucapan">Pecahkan teka - teki untuk mengetahui username dan password</p>
+			</div>
+		</div>
+
+		<div class="login-content">
+			<form id="form" method="post">
+				<img src="assets/img/avatar.svg" alt="">
+				<h2 class="title">Welcome</h2>
+
+				<!-- Username -->
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<h5>Username</h5>
+						<input type="text" class="input" id="user">
+					</div>
+				</div>				
+				<!-- End Username -->
+
+				<!-- Password -->
+				<div class="input-div pass">
+					<div class="i"> 
+						<i class="fas fa-lock"></i>
+					</div>
+					<div class="div">
+						<h5>Password</h5>
+						<input type="password" class="input" id="pwd">
+					</div>
+					<span class="showpass" >
+						<i class="fas fa-eye" id="show" onclick="showHide();"></i>
+						<i class="fas fa-eye-slash" id="hide" onclick="showHide();"></i>
+					</span>
+				</div>
+				<!-- End Password -->
+
+				<a target="_blank" href="https://www.google.com">Forgot Password?</a>
+				<input type="button" class="btn" value="Login" onclick="validasi();">
+				<!-- <button type="submit" class="btn" id="login-button"> MASUK </button> -->
+				<!-- <input type="submit" class="btn" value="Login"> -->
+			</form>
+		</div>
+	</div>
+
+	<!-- Link JavaScript -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<!-- Link SweetAlert -->
+	<script type="text/javascript" src="assets/js/sweetalert2.all.min.js"></script>
+</body>
+</html>
