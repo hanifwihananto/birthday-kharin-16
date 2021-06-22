@@ -1,13 +1,13 @@
 const inputs = document.querySelectorAll(".input");
 
-function addcl(){
+function addcl() {
 	let parent = this.parentNode.parentNode;
 	parent.classList.add("focus");
 }
 
-function remcl(){
+function remcl() {
 	let parent = this.parentNode.parentNode;
-	if(this.value == ""){
+	if (this.value == "") {
 		parent.classList.remove("focus");
 	}
 }
@@ -18,26 +18,27 @@ inputs.forEach(input => {
 });
 
 // Validasi akun
-function validasi(){
+function validasi() {
 	const user = document.getElementById('user').value;
 	const pwd = document.getElementById('pwd').value;
 	if (user == "hanif" && pwd == "123") {
 		// alert('Login Berhasil');
 		swal.fire({
-			icon : 'success',
-			title : 'Login Berhasil',
+			icon: 'success',
+			title: 'Login Berhasil',
 			showConfirmButton: false,
 		});
 		document.getElementById('form').reset();
-		setTimeout(function(){
-			window.location = "assets/html/cake.html";
-			return false;}, 1000);
+		setTimeout(function () {
+			window.location = "assets/html/text.html";
+			return false;
+		}, 1000);
 	}
 	else {
 		// alert('Login Gagal');
 		swal.fire({
-			icon : 'error',
-			title : 'Login Gagal'
+			icon: 'error',
+			title: 'Login Gagal'
 		});
 		document.getElementById('form').reset();
 	}
@@ -49,7 +50,7 @@ const pass = document.getElementById('pwd');
 const showPass = document.getElementById('show');
 const hidePass = document.getElementById('hide');
 
-function showHide(){
+function showHide() {
 	if (pass.type === 'password') {
 		pass.setAttribute('type', 'text');
 		showPass.classList.add('hide');
