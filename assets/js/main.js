@@ -21,7 +21,7 @@ inputs.forEach(input => {
 function validasi() {
 	const user = document.getElementById('user').value;
 	const pwd = document.getElementById('pwd').value;
-	if (user == "hanif" && pwd == "123") {
+	if (user == "kharin" && pwd == "03072005") {
 		// alert('Login Berhasil');
 		swal.fire({
 			icon: 'success',
